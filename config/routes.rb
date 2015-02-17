@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'send/get_address'
 
-  get 'send/send_mail'
+  post 'send/send_mail'
 
   get 'sessions/log_in'
   post 'sessions/log_in'
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :authors
   resources :submissions
   resources :surveys
-  
+
   root 'surveys#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
