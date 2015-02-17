@@ -4,6 +4,6 @@ class SendController < ApplicationController
 
   def send_mail
     params[:address]
-    SendMailer(params[:address]).invitation.deliver_now
+    SendMailer.invitation(params[:address]).deliver_now
   end
 end
