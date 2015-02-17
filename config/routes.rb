@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'send/get_address'
+
+  get 'send/send_mail'
+
   get 'sessions/log_in'
   post 'sessions/log_in'
   get 'sessions/log_out'
